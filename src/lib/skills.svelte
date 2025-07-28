@@ -1,4 +1,6 @@
-
+<script>
+  const base = import.meta.env.BASE_URL;
+</script>
 <section class="mt-5 p-2 pt-5 mb-3">
     <div class="text-center skills-section" style="max-width: 800px; margin: 0 auto;">
   <h1 class="text-primary d-flex align-items-center justify-content-center gap-3" style="font-weight: 700; font-size: 3rem;">
@@ -12,26 +14,26 @@
 
 <div class="slider-wrapper">
     <div class="slider">
-        <img src="/pictures/python.png" alt="img1" />
-        <img src="/pictures/php.png" alt="img2" />
-        <img src="/pictures/sql.png" alt="img3" />
-        <img src="/pictures/github.png" alt="img4" />
-        <img src="/pictures/npm.png" alt="img5" />
-        <img src="/pictures/python.png" alt="img1" />
-        <img src="/pictures/php.png" alt="img2" />
-        <img src="/pictures/sql.png" alt="img3" />
-        <img src="/pictures/github.png" alt="img4" />
-        <img src="/pictures/npm.png" alt="img5" />
-        <img src="/pictures/js.png" alt="img6" />
-        <img src="/pictures/boot.png" alt="img7" />
-        <img src="/pictures/svelte.png" alt="img8" />
-        <img src="/pictures/html.png" alt="img9" />
-        <img src="/pictures/css.png" alt="img10" />
-        <img src="/pictures/js.png" alt="img6" />
-        <img src="/pictures/boot.png" alt="img7" />
-        <img src="/pictures/svelte.png" alt="img8" />
-        <img src="/pictures/html.png" alt="img9" />
-        <img src="/pictures/css.png" alt="img10" />
+        <img src="{base}pictures/python.png" alt="img1" />
+        <img src="{base}pictures/php.png" alt="img2" />
+        <img src="{base}pictures/sql.png" alt="img3" />
+        <img src="{base}pictures/github.png" alt="img4" />
+        <img src="{base}pictures/npm.png" alt="img5" />
+        <img src="{base}pictures/python.png" alt="img1" />
+        <img src="{base}pictures/php.png" alt="img2" />
+        <img src="{base}pictures/sql.png" alt="img3" />
+        <img src="{base}pictures/github.png" alt="img4" />
+        <img src="{base}pictures/npm.png" alt="img5" />
+        <img src="{base}pictures/js.png" alt="img6" />
+        <img src="{base}pictures/boot.png" alt="img7" />
+        <img src="{base}pictures/svelte.png" alt="img8" />
+        <img src="{base}pictures/html.png" alt="img9" />
+        <img src="{base}pictures/css.png" alt="img10" />
+        <img src="{base}pictures/js.png" alt="img6" />
+        <img src="{base}pictures/boot.png" alt="img7" />
+        <img src="{base}pictures/svelte.png" alt="img8" />
+        <img src="{base}pictures/html.png" alt="img9" />
+        <img src="{base}pictures/css.png" alt="img10" />
         
     </div>
 </div>

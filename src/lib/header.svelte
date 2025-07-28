@@ -1,4 +1,5 @@
 <script>
+    const base = import.meta.env.BASE_URL;
   import { fly } from 'svelte/transition';
   import { onMount,onDestroy } from 'svelte';
   import { tweened } from 'svelte/motion';
@@ -103,12 +104,12 @@
                         <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold" in:fly={{ x: -100, opacity: 0, duration: 1300 }} out:fly={{x: 100, opacity: 0, duration: 600}}>Get in Touch</a>
                         {/if}
                     </div>
-                    <img src="../pictures/code.svg" width="800" height="500" alt="Code Icon" class="symb z-0"/>
-                    <img src="../pictures/infos.svg" alt="Code Icon" class="infos z-0"/>
+                    <img src="{base}pictures/code.svg" width="800" height="500" alt="Code Icon" class="symb z-0"/>
+                    <img src="{base}pictures/infos.svg" alt="Code Icon" class="infos z-0"/>
             </div>
             <div class="col-md-3 d-none d-lg-block">
                 <div class="codes ms-5 ps-5 position-relative">
-                    <img src="../pictures/logos.svg" width="800" height="500" alt="Code Icon" class="bg-svg ms-5"/>
+                    <img src="{base}pictures/logos.svg" width="800" height="500" alt="Code Icon" class="bg-svg ms-5"/>
                 </div>
             </div>
         </div>
