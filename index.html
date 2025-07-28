@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./pictures/Y.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Portfolio</title>
+    <script type="module" crossorigin src="/portfolio/assets/index-DWH7JJ3x.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-C0ntBNnn.css">
+  </head>
+  <body>
+    <style>
+      ::-webkit-scrollbar{
+        background-color: #0a1930;
+      }
+      ::-webkit-scrollbar-track {
+         background: radial-gradient(circle at center top, #0a1930, #01010a 80%);
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #112c55;
+        border-radius: 6px;
+        border: none;
+      }
+      body {
+  margin: 0;
+  background: radial-gradient(circle at center top, #0a1930, #01010a 80%);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  position: relative;
+}
+
+.background-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.2);
+  animation: float 5s ease-in-out infinite, twinkle 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-5px) scale(1.2); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+
+.s1  { top: 10%; left: 20%; }
+.s2  { top: 15%; left: 75%; }
+.s3  { top: 22%; left: 40%; }
+.s4  { top: 30%; left: 90%; }
+.s5  { top: 38%; left: 15%; }
+.s6  { top: 44%; left: 60%; }
+.s7  { top: 53%; left: 35%; }
+.s8  { top: 60%; left: 80%; }
+.s9  { top: 68%; left: 50%; }
+.s10 { top: 75%; left: 10%; }
+.s11 { top: 83%; left: 68%; }
+.s12 { top: 88%; left: 25%; }
+.s13 { top: 92%; left: 85%; }
+
+    </style>
+     <div class="background-stars">
+    <div class="star s1"></div>
+    <div class="star s2"></div>
+    <div class="star s3"></div>
+    <div class="star s4"></div>
+    <div class="star s5"></div>
+    <div class="star s6"></div>
+    <div class="star s7"></div>
+    <div class="star s8"></div>
+    <div class="star s9"></div>
+    <div class="star s10"></div>
+    <div class="star s11"></div>
+    <div class="star s12"></div>
+    <div class="star s13"></div>
+  </div>
+  </body>
+</html>
