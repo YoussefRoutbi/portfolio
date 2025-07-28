@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
@@ -49,3 +50,6 @@ export default writable(0)
 =======
 # My-Portfolio
 >>>>>>> ec3b9a3878374d014410b67dd989db414e176a77
+=======
+# portfolio
+>>>>>>> 0dd9a6e3887fc923b390675cbb8ca9c546594794
