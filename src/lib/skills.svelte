@@ -1,80 +1,73 @@
 <script>
+  const logos = [
+    'contentful','unilever','stackoverflow','riot','nike','kubernetes','figma'
+  ];
   const base = import.meta.env.BASE_URL;
 </script>
-<section class="mt-5 p-2 pt-5 mb-3">
-    <div class="text-center skills-section" style="max-width: 800px; margin: 0 auto;">
-  <h1 class="text-primary d-flex align-items-center justify-content-center gap-3" style="font-weight: 700; font-size: 3rem;">
-    Skills
-    <img src="./pictures/dart.png" alt="Dart Logo" class="skills-icon mb-2" />
-  </h1>
-  <p class="text-white fs-5" style="margin-top: 0.5rem;">
-    The Skills, Tools, and Technologies I Specialize In:
-  </p>
-</div>
 
-<div class="slider-wrapper">
+<section class="clients-section py-5">
+  <div class="slider-wrapper">
     <div class="slider">
-        <img src="{base}pictures/python.png" alt="img1" />
-        <img src="{base}pictures/php.png" alt="img2" />
-        <img src="{base}pictures/sql.png" alt="img3" />
-        <img src="{base}pictures/github.png" alt="img4" />
-        <img src="{base}pictures/npm.png" alt="img5" />
-        <img src="{base}pictures/python.png" alt="img1" />
-        <img src="{base}pictures/php.png" alt="img2" />
-        <img src="{base}pictures/sql.png" alt="img3" />
-        <img src="{base}pictures/github.png" alt="img4" />
-        <img src="{base}pictures/npm.png" alt="img5" />
-        <img src="{base}pictures/js.png" alt="img6" />
-        <img src="{base}pictures/boot.png" alt="img7" />
-        <img src="{base}pictures/svelte.png" alt="img8" />
-        <img src="{base}pictures/html.png" alt="img9" />
-        <img src="{base}pictures/css.png" alt="img10" />
-        <img src="{base}pictures/js.png" alt="img6" />
-        <img src="{base}pictures/boot.png" alt="img7" />
-        <img src="{base}pictures/svelte.png" alt="img8" />
-        <img src="{base}pictures/html.png" alt="img9" />
-        <img src="{base}pictures/css.png" alt="img10" />
-        
+      {#each logos as logo}
+        <img src="{base}pictures/{logo}.png" alt="{logo}" />
+      {/each}
+      {#each logos as logo} <!-- duplicate for seamless loop -->
+        <img src="{base}pictures/{logo}.png" alt="{logo}" />
+      {/each}
     </div>
-</div>
+  </div>
 </section>
 
 <style>
-    .slider-wrapper {
-    overflow: hidden;
-    width: 100%;
-    max-width: 100vw;
-    background: transparent;
+.clients-section {
+  width: 100%;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  padding: 2rem 0;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .slider {
   display: flex;
-  width: calc(1000px * 2);
-  animation: scrollLeft 10s linear infinite;
+  gap: 4rem;
+  animation: scroll 20s linear infinite;
 }
+
 .slider img {
-  width: 200px;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-.skills-icon {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-}
-.skills-section p {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.4;
+/* Continuous scroll animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* scroll half since we duplicated logos */
 }
 
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .slider img {
+    height: 50px;
+  }
+  .slider {
+    gap: 2rem;
+    animation-duration: 15s;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider img {
+    height: 40px;
+  }
+  .slider {
+    gap: 1.5rem;
+    animation-duration: 12s;
+  }
+}
 </style>
