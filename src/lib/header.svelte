@@ -255,5 +255,135 @@
     .card p{
         font-size: 20px;
     }
+/* -------- RESPONSIVENESS FIXES -------- */
+@media (max-width: 1200px) {
+  main {
+    height: auto;
+  }
+  .symb,
+  .infos {
+    width: 400px;
+  }
+  .card {
+    width: 300px;
+  }
+}
 
+@media (max-width: 992px) {
+  header {
+    text-align: center;
+  }
+
+  main {
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .row.mt-5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .col-md-5,
+  .col-md-3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .symb {
+    position: absolute;
+    right: -5%;
+    top: 20%;
+    width: 350px;
+    opacity: 0.2;
+  }
+
+  .infos {
+    top: 60%;
+    right: 10%;
+    width: 350px;
+    opacity: 0.25;
+  }
+
+  .codes img {
+    width: 100%;
+    opacity: 0.25;
+  }
+
+  .card {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+
+  .symb,
+  .infos {
+    width: 250px;
+    opacity: 0.25;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .navbar h3 a {
+    font-size: 1.2rem;
+  }
+
+  .navbar .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .button::before {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 1rem;
+  }
+
+  .symb,
+  .infos {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-nav {
+    gap: 1rem;
+  }
+
+  .codes img {
+    opacity: 0.15;
+  }
+}
 </style>
